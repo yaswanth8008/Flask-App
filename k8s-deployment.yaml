@@ -12,6 +12,8 @@ spec:
       labels:
         app: flask-app
     spec:
+      nodeSelector:
+      beta.kubernetes.io/os: windows
       containers:
       - name: my-flask-app
         image: 80081837/mypythonflaskwebapp
